@@ -1,0 +1,14 @@
+#include "bug.h"
+
+int main()
+{
+	int x = 0, a= 0, y = 0;
+	scanf("%d", &x);
+	for (y = 0; y < 32; y++)
+	{
+		if (1 ==( 1&(x >> y)))
+			a++;
+	}
+	printf("该数字的二进制位中‘1’的个数为：%d\n", a);
+	return 0;
+}
